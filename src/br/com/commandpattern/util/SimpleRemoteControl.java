@@ -1,4 +1,4 @@
-package br.com.commandpattern;
+package br.com.commandpattern.util;
 
 public class SimpleRemoteControl {
 	

@@ -1,4 +1,7 @@
-package br.com.commandpattern;
+package br.com.commandpattern.lightcommand;
+
+import br.com.commandpattern.domain.Light;
+import br.com.commandpattern.util.Command;
 
 public class LightOnCommand implements Command {
 
@@ -12,6 +15,11 @@ public class LightOnCommand implements Command {
 	@Override
 	public void execute() {
 		System.out.println(light.on());
+	}
+
+	@Override
+	public void undo() {
+		System.out.println(light.off());
 	}
 
 }
